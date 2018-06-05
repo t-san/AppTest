@@ -1,0 +1,31 @@
+<!-- プルダウン動的生成、画像を重ねて表示 -->
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+
+<style>
+.relative {
+    position: relative;
+}
+.absolute {
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+</style>
+
+
+<body>
+<div class="relative">
+<img src="./images/Black.png" />
+<img src="./images/TShirt.png" class="absolute"  />
+</div>
+<form method="POST" action="App">
+<input name="name" type="text">
+    <input type="submit" value="動的生成">
+  </form>
+</body>
+</html>
