@@ -12,15 +12,15 @@
 動的表示テスト<br>
 
 <%//プロダウン動的生成%>
+
 <select name ="test">
 <%for(String str:bean.getList()){ %>
-<% out.print("<option value=");
-out.print(str);
-out.print(">");
-out.print(str);
-out.println("</option>");%>
+<option value="<%=str %>">
+str
+</option>
 <%} %>
 
 </select>
+
 </body>
 </html>
